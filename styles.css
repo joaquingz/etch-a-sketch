@@ -2,6 +2,7 @@
 
 
 body{
+    box-sizing: border-box;
     background-color: gray;
     margin: 0;
     padding: 0;
@@ -16,10 +17,20 @@ h1{
     text-align: center;
 }
 
+#main{
+    display: flex;
+    align-items: flex-start;
+    gap: 18px;
+}
+
+.button{
+    padding: 5px 10px;
+}
+
 #container{
     width: 400px;
     height: 400px;
-    background-color: blue;
+    background-color: #ccc;
 
     display: flex;
     flex-wrap: wrap;
@@ -28,5 +39,4 @@ h1{
 
 .grid-item{
     box-sizing: border-box;
-    border: 1px solid red;
 }
