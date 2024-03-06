@@ -7,10 +7,26 @@ body{
     padding: 0;
     
     display: flex;
-    justify-content: center;
+    flex-direction: column;
+    align-items: center;
 }
 
 h1{
     font-family: "Jacquarda Bastarda 9", serif;
     text-align: center;
+}
+
+#container{
+    width: 400px;
+    height: 400px;
+    background-color: blue;
+
+    display: flex;
+    flex-wrap: wrap;
+    align-items: flex-start;
+}
+
+.grid-item{
+    box-sizing: border-box;
+    border: 1px solid red;
 }
