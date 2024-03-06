@@ -15,10 +15,14 @@ function createGrid(number){
     }
 }
 
-createGrid(16);
+createGrid(32);
 
-const gridItem = document.querySelector('.grid-item');
+const gridItems = document.querySelectorAll('.grid-item');
 
-gridItem.addEventListener('mouseover', (e) =>{
-    e.target.style.background = 'black';
+gridItems.forEach((item) => {
+    addEventListener('mouseover', (e)=>{
+        if(e.target.className === 'grid-item'){
+            e.target.style.background = 'black';
+        }
+    })
 })
